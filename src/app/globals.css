@@ -66,4 +66,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  ::selection {
+    @apply bg-lime-300 text-slate-950; /* Contoh warna */
+  }
 }
