@@ -173,7 +173,7 @@ export default function Home() {
       title: 'Fullstack Web Developer',
       work: 'PT. Blantika Alam Perkasa',
       description:
-        "During my freelance as a Fullstack Web Developer at PT. Blantika Alam Perkasa from January to March 2022, I was responsible for developing dynamic and responsive websites based on UI/UX designs. I utilized Laravel, Tailwind, and MySQL to bring these designs to life, ensuring a high-quality, user-friendly product. To guarantee optimal performance and user experience, I conducted comprehensive evaluations of the website's UI and functionalities. Additionally, I successfully deployed the website to Hostinger, ensuring it was reliably accessible and performed consistently well.",
+        `During my freelance as a Fullstack Web Developer at PT. Blantika Alam Perkasa from January to March 2022, I was responsible for developing dynamic and responsive websites based on UI/UX designs. I utilized Laravel, Tailwind, and MySQL to bring these designs to life, ensuring a high-quality, user-friendly product. To guarantee optimal performance and user experience, I conducted comprehensive evaluations of the website&apos;s UI and functionalities. Additionally, I successfully deployed the website to Hostinger, ensuring it was reliably accessible and performed consistently well.`,
       href: 'https://www.linkedin.com/in/cassava-indonesia-5b323622a/?originalSubdomain=id',
       tools: ['Laravel', 'PHP', 'Tailwind CSS', 'MySQL', 'Hostinger'],
     },
@@ -287,7 +287,7 @@ export default function Home() {
                   A Software Developer from Pati, Indonesia.
                 </span>
               </div>
-              <p className="text-xl text-slate-400">
+              <p className="w-full max-w-96 text-xl text-slate-400">
                 I Craft digital masterpieces: pixel-perfect, captivating, and
                 seamlessly accessible.
               </p>
@@ -310,9 +310,9 @@ export default function Home() {
                       A Software Developer from Pati, Indonesia.
                     </span>
                   </div>
-                  <p className="text-xl text-slate-400">
-                    I Craft digital masterpieces: pixel-perfect,
-                    <br /> captivating, and seamlessly accessible.
+                  <p className="w-full max-w-96 text-xl text-slate-400">
+                    I Craft digital masterpieces: pixel-perfect, captivating,
+                    and seamlessly accessible.
                   </p>
                 </motion.div>
               )}

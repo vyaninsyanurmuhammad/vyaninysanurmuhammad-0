@@ -36,14 +36,14 @@ const CardWork = ({
         <div className="z-10 flex flex-col gap-4">
           <div className="flex flex-col gap-0">
             <div className="flex flex-row items-end gap-3 group-hover:items-start">
-              <h4 className="font-medium text-white group-hover:text-lime-400">
+              <h4 className="font-medium text-start text-white group-hover:text-lime-400">
                 {title ?? '-'}
               </h4>
 
               <ArrowUpRight className="h-4 w-4 text-slate-100 group-hover:scale-125 group-hover:stroke-2 group-hover:text-lime-400" />
             </div>
             <div className="flex flex-row items-center gap-1">
-              <p className="text-400 font-medium text-slate-400 group-hover:text-slate-100">
+              <p className="text-400 text-start font-medium text-slate-400 group-hover:text-slate-100">
                 {work ?? '-'}
               </p>
               <Dot className="h-5 w-5 text-slate-400" />

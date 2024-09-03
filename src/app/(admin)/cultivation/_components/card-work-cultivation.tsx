@@ -12,7 +12,7 @@ const CardWorkCultivation = () => {
           <div className="flex flex-row justify-between gap-4">
             <div className="flex flex-col gap-0">
               <div className="flex flex-row items-end gap-3 group-hover:items-start">
-                <h4 className="font-medium text-white group-hover:text-lime-400">
+                <h4 className="font-medium text-start text-white group-hover:text-lime-400">
                   uild a Quiiiz App
                 </h4>
                 <ArrowUpRight className="h-4 w-4 text-slate-100 group-hover:scale-125 group-hover:stroke-2 group-hover:text-lime-400" />
@@ -36,10 +36,10 @@ const CardWorkCultivation = () => {
           </div>
 
           <p className="text-start text-slate-400 group-hover:text-slate-100">
-            "Kesrepro App" is an educational game about reproductive health for
-            early teenagers (aged 10-15). Built by using Flutter, Redux, and
-            Firebase, this app offers engaging quizzes to enhance their
-            understanding of this topic.
+          &ldquo;Kesrepro App&rdquo; is an educational game about reproductive
+            health for early teenagers (aged 10-15). Built by using Flutter,
+            Redux, and Firebase, this app offers engaging quizzes to enhance
+            their understanding of this topic.
           </p>
 
           <div className="flex w-full flex-wrap gap-2">

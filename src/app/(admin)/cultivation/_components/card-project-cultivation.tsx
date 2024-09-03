@@ -34,10 +34,10 @@ const CardProjectCultivation = () => {
             </div>
           </div>
           <p className="text-slate-400 group-hover:text-slate-100">
-            "Kesrepro App" is an educational game about reproductive health for
-            early teenagers (aged 10-15). Built by using Flutter, Redux, and
-            Firebase, this app offers engaging quizzes to enhance their
-            understanding of this topic.
+            &ldquo;Kesrepro App&rdquo; is an educational game about reproductive
+            health for early teenagers (aged 10-15). Built by using Flutter,
+            Redux, and Firebase, this app offers engaging quizzes to enhance
+            their understanding of this topic.
           </p>
 
           <div className="flex w-full flex-wrap gap-2">
