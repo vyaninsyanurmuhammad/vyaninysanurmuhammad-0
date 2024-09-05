@@ -568,7 +568,7 @@ export default function Home() {
                 )}
               </ul>
               <Link
-                href="https://drive.google.com/file/d/1NOJuOIT1GKf-6KpeL0UhIUcPA_qgaODt/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Mw0Pp_F3sHTjDGAPRiik_K5h8KI4-uLG/view?usp=sharing"
                 className="group flex flex-row items-center justify-start gap-2 text-slate-100 hover:text-lime-400"
               >
                 <span>See My ATS Resume</span>
@@ -588,7 +588,7 @@ export default function Home() {
               <p className="col-span-5 text-sm text-white">
                 Developed by vyaninsyanurmuhammad in Visual Studio Code. Built
                 with Next.js and Tailwind CSS, deployed with Vercel. All text is
-                set in the Inter typeface.
+                set in the Outfit typeface.
               </p>
             </div>
           </div>
