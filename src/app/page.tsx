@@ -155,14 +155,6 @@ export default function Home() {
       tools: ['Next.js', 'Shadcn/UI', 'Tailwind CSS', 'Analytics APIs'],
     },
     {
-      title: 'Fullstack Mobile Developer',
-      work: 'UMKM Utami Wedding Organizer',
-      description:
-        'As a Fullstack Mobile Developer at UMKM Utami Wedding Organizer from March to June 2023, I was responsible for developing dynamic and responsive mobile applications using Flutter, Redux, and Firebase. I successfully created mobile apps tailored to business needs, ensuring seamless user interaction. Additionally, I performed comprehensive evaluations of both the UI and app functionalities, optimizing the overall user experience and ensuring peak performance throughout the development lifecycle.',
-      href: 'https://www.instagram.com/viranika_viranika/',
-      tools: ['Flutter', 'Redux', 'Firebase'],
-    },
-    {
       title: 'Assistant Lecturer of Serious Game',
       work: 'Muhammadiyah University of Yogyakarta',
       description:
