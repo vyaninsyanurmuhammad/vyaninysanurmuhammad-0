@@ -49,8 +49,8 @@ export default function Home() {
         ScrollTrigger.create({
           trigger: aboutElement,
           // pin: true,
-          start: '-97 top',
-          end: 'bottom +=400',
+          start: 'top-=55% top',
+          end: 'bottom +=20%',
           markers: false,
           onEnter: () => {
             setIsActive('about');
@@ -75,8 +75,8 @@ export default function Home() {
         ScrollTrigger.create({
           trigger: jobsElement,
           // pin: true,
-          start: 'top +=400',
-          end: 'bottom +=400',
+          start: 'top +=20%',
+          end: 'bottom +=20%',
           markers: false,
           onEnter: () => {
             setIsActive('work');
@@ -101,7 +101,7 @@ export default function Home() {
         ScrollTrigger.create({
           trigger: projectsElement,
           // pin: true,
-          start: 'top +=400',
+          start: 'top +=20%',
           end: 'bottom',
           markers: false,
           onEnter: () => {
@@ -164,8 +164,7 @@ export default function Home() {
     {
       title: 'Fullstack Web Developer',
       work: 'PT. Blantika Alam Perkasa',
-      description:
-        `During my freelance as a Fullstack Web Developer at PT. Blantika Alam Perkasa from January to March 2022, I was responsible for developing dynamic and responsive websites based on UI/UX designs. I utilized Laravel, Tailwind, and MySQL to bring these designs to life, ensuring a high-quality, user-friendly product. To guarantee optimal performance and user experience, I conducted comprehensive evaluations of the website&apos;s UI and functionalities. Additionally, I successfully deployed the website to Hostinger, ensuring it was reliably accessible and performed consistently well.`,
+      description: `During my freelance as a Fullstack Web Developer at PT. Blantika Alam Perkasa from January to March 2022, I was responsible for developing dynamic and responsive websites based on UI/UX designs. I utilized Laravel, Tailwind, and MySQL to bring these designs to life, ensuring a high-quality, user-friendly product. To guarantee optimal performance and user experience, I conducted comprehensive evaluations of the website&apos;s UI and functionalities. Additionally, I successfully deployed the website to Hostinger, ensuring it was reliably accessible and performed consistently well.`,
       href: 'https://www.linkedin.com/in/cassava-indonesia-5b323622a/?originalSubdomain=id',
       tools: ['Laravel', 'PHP', 'Tailwind CSS', 'MySQL', 'Hostinger'],
     },
@@ -180,6 +179,25 @@ export default function Home() {
   ];
 
   const projects = [
+    {
+      image: '/thumbnails/vyanai.jpg',
+      title: 'Build a Landing AI App',
+      description:
+        'In the Landing Vyan AI project, I conducted an in-depth exploration of using GSAP, Framer Motion, and Lenis with the Next.js framework to create an engaging interactive experience. You can check the source code and view the deployment results on Vercel to see the implementation and final outcome',
+      href: [
+        'https://bit.ly/git-landing-vyan-ai',
+        'https://bit.ly/landing-vyan-ai',
+      ],
+      tools: [
+        'Next.js',
+        'Tailwind CSS',
+        'GSAP',
+        'Lenis',
+        'Framer Motion',
+        'Shadcn/UI',
+        'Aceternity UI',
+      ],
+    },
     {
       image: '/thumbnails/quiiiz.jpg',
       title: 'Build a Quiiiz App',
@@ -200,6 +218,7 @@ export default function Home() {
         'PostgreSQL',
       ],
     },
+
     {
       image: '/thumbnails/livebold.png',
       title: 'Build a LiveBold Web',
@@ -412,7 +431,7 @@ export default function Home() {
         </div>
 
         <div className="h-full w-full pb-24 pt-0 md:pt-24">
-          <div className="flex flex-col gap-16 md:gap-20">
+          <div className="flex flex-col pt-16 md:pt-20">
             <section
               id="about"
               ref={aboutRef}
@@ -510,7 +529,7 @@ export default function Home() {
             <section
               id="work"
               ref={jobsRef}
-              className="flex scroll-mt-24 flex-col gap-8"
+              className="flex scroll-mt-24 flex-col gap-8 pt-16 md:pt-20"
             >
               <p className="after: relative w-fit text-lg font-semibold uppercase text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-[calc(100%+24px)] after:bg-lime-400">
                 Work Experience
@@ -539,11 +558,15 @@ export default function Home() {
                 )}
               </ul>
             </section>
-            <section id="project" className="flex scroll-mt-24 flex-col gap-8">
+            <section
+              id="project"
+              className="flex scroll-mt-24 flex-col gap-8 pt-16 md:pt-20"
+              ref={projectsRef}
+            >
               <p className="after: relative w-fit text-lg font-semibold uppercase text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-[calc(100%+24px)] after:bg-lime-400">
                 Project Experience
               </p>
-              <ul ref={projectsRef} className="group/list flex flex-col gap-8">
+              <ul className="group/list flex flex-col gap-8">
                 {projects.map(
                   ({ title, description, href, tools, image }, index) => (
                     <li key={`${title}-${index}`} className="h-fit w-full">
@@ -560,7 +583,7 @@ export default function Home() {
                 )}
               </ul>
               <Link
-                href="https://drive.google.com/file/d/1Mw0Pp_F3sHTjDGAPRiik_K5h8KI4-uLG/view?usp=sharing"
+                href="https://drive.google.com/file/d/1NZcKwzV2YaLcIZbN45QAOK7IiezVWG5c/view?usp=sharing"
                 className="group flex flex-row items-center justify-start gap-2 text-slate-100 hover:text-lime-400"
               >
                 <span>See My ATS Resume</span>
@@ -568,7 +591,7 @@ export default function Home() {
               </Link>
             </section>
 
-            <div className="grid grid-cols-6 gap-2 opacity-50">
+            <div className="grid grid-cols-6 gap-2 pt-16 opacity-50 md:pt-20">
               <div className="relative h-full w-auto">
                 <Image
                   src={'/brand-white.svg'}
